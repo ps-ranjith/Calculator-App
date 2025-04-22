@@ -1,0 +1,24 @@
+.display {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 10px #d9d9d9,
+              inset -5px -5px 10px #ffffff;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 25px 20px;
+  text-align: right;
+  margin: 10px 15px 20px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  word-break: break-all;
+  letter-spacing: 1px;
+}
+
+/* For smaller numbers */
+.display:empty::before {
+  content: '0';
+  color: #95a5a6;
+}
